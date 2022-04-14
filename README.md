@@ -1,2 +1,2 @@
 # Web Portfolio
-https://sintach087.github.io/web-porfolio
+https://sintach087.github.io
