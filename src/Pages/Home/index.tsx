@@ -1,13 +1,12 @@
 import React from 'react';
 import './index.scss';
+import { NavBar } from './Components';
 
 const Home = () => {
     return (
-        <div className='home-container'>
-            <div className='contruction'>
-                Under construction
-            </div>
-        </div>
+        <>
+            <NavBar />
+        </>
     )
 }
 
