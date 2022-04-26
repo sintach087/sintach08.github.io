@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d472490a.css",
-    "main.js": "/static/js/main.c733acdc.js",
+    "main.css": "/static/css/main.0ced6109.css",
+    "main.js": "/static/js/main.13b912ac.js",
+    "static/media/lineart.png": "/static/media/lineart.4ed964b979416cfb0924.png",
     "static/media/profilepic.png": "/static/media/profilepic.d9db05242e1b1cf743e7.png",
-    "static/media/Hagrid-Light.woff2": "/static/media/Hagrid-Light.77e1213517e91439d193.woff2",
-    "static/media/Hagrid-Medium.woff2": "/static/media/Hagrid-Medium.6d881c7d2e9044322036.woff2",
-    "static/media/NeueMachina.woff2": "/static/media/NeueMachina.cd7c406a468efb4ca21a.woff2",
+    "static/media/NeueMachina-Regular.otf": "/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
+    "static/media/NeueMachina-bold.otf": "/static/media/NeueMachina-bold.07d4eef9a71d90303bbf.otf",
+    "static/media/NeueMachina-Light.otf": "/static/media/NeueMachina-Light.e1fb3b2574d18010b9ff.otf",
+    "static/media/Hagrid-Medium.woff2": "/static/media/Hagrid-Medium.0a4e315388b6e69bea88.woff2",
+    "static/media/Hagrid-Light.woff2": "/static/media/Hagrid-Light.6a4473a0b284306d7f5c.woff2",
     "index.html": "/index.html",
-    "main.d472490a.css.map": "/static/css/main.d472490a.css.map",
-    "main.c733acdc.js.map": "/static/js/main.c733acdc.js.map"
+    "main.0ced6109.css.map": "/static/css/main.0ced6109.css.map",
+    "main.13b912ac.js.map": "/static/js/main.13b912ac.js.map"
   },
   "entrypoints": [
-    "static/css/main.d472490a.css",
-    "static/js/main.c733acdc.js"
+    "static/css/main.0ced6109.css",
+    "static/js/main.13b912ac.js"
   ]
 }
