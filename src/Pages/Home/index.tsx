@@ -1,11 +1,12 @@
 import React from 'react';
-import './index.scss';
-import { NavBar } from './Components';
+import { Main, About, Skills } from './Components';
 
 const Home = () => {
     return (
         <>
-            <NavBar />
+            <Main />
+            <About />
+            <Skills />
         </>
     )
 }

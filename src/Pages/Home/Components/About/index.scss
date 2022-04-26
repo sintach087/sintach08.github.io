@@ -1,0 +1,135 @@
+.about {
+    width: 100%;
+    color: black;
+    flex-direction: column;
+    background-color: #d9d9d9;
+
+    .about-me {
+        font-weight: 800;
+        font-size: 35px;
+        margin-top: 5rem;
+    }
+    .desktop {
+        .profilepic {
+            width: 100%;
+            height: 40%;
+            margin-top: 3rem;
+    
+            .pic {
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
+    
+            ul {
+                text-decoration: none;
+                list-style: none;
+                display: flex;
+                padding-left: 0;
+                margin-top: 1rem;
+    
+                li {
+                    padding: 5px;
+                    cursor: pointer;
+    
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        .content {
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .aboutme {
+                display: none;
+            }
+            .description {
+                width: 85%;
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .about {    
+        .about-me {
+            display: none;
+        }
+        .desktop {
+            display: flex;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+     
+            .profilepic {
+                width: 50%;
+        
+                .pic {
+                    width: 270px;
+                    height: 270px;
+                }
+        
+                ul {
+                    li {
+                        padding: 5px;
+        
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+            .content {
+                width: 50%;
+                margin-top: 0;
+                margin-bottom: 0;
+                flex-direction: column;
+        
+                .aboutme {
+                    display: block;
+                    font-size: 40px;
+                    font-weight: 800;
+                }
+                .description {
+                    width: 85%;
+                    font-size: 18px;
+                    margin-top: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .about {    
+        .desktop {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .about {    
+        .desktop {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .about {    
+        .desktop {
+            width: 70%;
+        }
+    }
+}

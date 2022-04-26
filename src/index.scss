@@ -1,4 +1,43 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800,300');
+
+@font-face {
+  font-family: 'Hagrid';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Hagrid-Light'), url(./Fonts/Hagrid-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Hagrid';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hagrid'), url(./Fonts/Hagrid-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Neue Machina Light'), url(./Fonts/NeueMachina-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('PP Neue Machina'), url(./Fonts/NeueMachina-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'PP Neue Machina';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('PP Neue Machina SuperBold'), url(./Fonts/NeueMachina-bold.otf) format('opentype');
+}
 
 *, :after, :before {
   box-sizing: border-box;
@@ -6,12 +45,8 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Agustina';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Agustina'), url('Fonts/Agustina.woff') format('woff');
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 ::-webkit-scrollbar {
