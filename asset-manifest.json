@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.973e28c5.css",
-    "main.js": "/static/js/main.13b912ac.js",
+    "main.css": "/static/css/main.e945c7dd.css",
+    "main.js": "/static/js/main.5bc7015a.js",
     "static/media/lineart.png": "/static/media/lineart.4ed964b979416cfb0924.png",
     "static/media/profilepic.png": "/static/media/profilepic.d9db05242e1b1cf743e7.png",
+    "static/media/visualstudio.png": "/static/media/visualstudio.47524545ab2a81e30017.png",
+    "static/media/notepad.png": "/static/media/notepad.c95aff425ab954ce62d6.png",
     "static/media/NeueMachina-Regular.otf": "/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
     "static/media/NeueMachina-bold.otf": "/static/media/NeueMachina-bold.07d4eef9a71d90303bbf.otf",
     "static/media/NeueMachina-Light.otf": "/static/media/NeueMachina-Light.e1fb3b2574d18010b9ff.otf",
+    "static/media/heidi.png": "/static/media/heidi.d9a7979e51387a60a409.png",
+    "static/media/postman.png": "/static/media/postman.39118c00905ec075e5c4.png",
+    "static/media/msoffice.png": "/static/media/msoffice.c9d72de571d2144b31e3.png",
+    "static/media/visualstudiocode.png": "/static/media/visualstudiocode.f0c2067909ab60a6fc74.png",
     "static/media/Hagrid-Medium.woff2": "/static/media/Hagrid-Medium.0a4e315388b6e69bea88.woff2",
     "static/media/Hagrid-Light.woff2": "/static/media/Hagrid-Light.6a4473a0b284306d7f5c.woff2",
     "index.html": "/index.html",
-    "main.973e28c5.css.map": "/static/css/main.973e28c5.css.map",
-    "main.13b912ac.js.map": "/static/js/main.13b912ac.js.map"
+    "main.e945c7dd.css.map": "/static/css/main.e945c7dd.css.map",
+    "main.5bc7015a.js.map": "/static/js/main.5bc7015a.js.map"
   },
   "entrypoints": [
-    "static/css/main.973e28c5.css",
-    "static/js/main.13b912ac.js"
+    "static/css/main.e945c7dd.css",
+    "static/js/main.5bc7015a.js"
   ]
 }
