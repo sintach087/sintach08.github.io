@@ -15,7 +15,7 @@ const Main = () => {
             </div>
             <div className='main-sub'>
                 <div className='lineart'>
-                    <img src={lineart}></img>
+                    <img src={lineart} alt='lineart'></img>
                 </div>
                 <div className='d-flex justify-content-center align-items-center contents'>
                     <div className='d-flex content'>

@@ -1,15 +1,10 @@
-import React, { useState, createRef } from 'react';
+import React, { useState } from 'react';
 import './index.scss';
 import { FrontEnd, BackEnd, Others } from 'Data/Skills';
 import { GiGraduateCap } from 'react-icons/gi';
 import { RiBriefcase4Line } from 'react-icons/ri'
 
 const Skill = () => {
-
-    const frontend = createRef<HTMLDivElement>();
-    const backend = createRef<HTMLDivElement>();
-    const others = createRef<HTMLDivElement>();
-
     const [tabActive, setTabActive] = useState<number>(1);
 
     let frontend_data = FrontEnd;
@@ -35,7 +30,7 @@ const Skill = () => {
                     <div className='icon-container'>
                         {
                             tabActive === 1 ? 
-                            <div className="icons-tab fade show" ref={frontend} aria-labelledby="frontend">
+                            <div className="icons-tab fade show" aria-labelledby="frontend">
                                 {
                                     frontend_data.map((x: any, y: any) => {
                                         return <div className='iconlogo' key={y}>
@@ -46,7 +41,7 @@ const Skill = () => {
                                 }
                             </div> :
                             tabActive === 2 ?
-                            <div className="icons-tab fade show" ref={backend} aria-labelledby="backend">
+                            <div className="icons-tab fade show" aria-labelledby="backend">
                             {
                                 backend_data.map((x: any, y: any) => {
                                     return <div className='iconlogo' key={y}>
@@ -57,7 +52,7 @@ const Skill = () => {
                             }
                             </div> :
                             tabActive === 3 ?
-                            <div className="icons-tab fade show" ref={others} aria-labelledby="others">
+                            <div className="icons-tab fade show" aria-labelledby="others">
                             {
                                 others_data.map((x: any, y: any) => {
                                     return <div className='iconlogo' key={y}>
@@ -85,7 +80,7 @@ const Skill = () => {
                         <div className='titlework'>
                             <RiBriefcase4Line className='icon'/> <span>Work Experience</span>
                         </div>
-                        <span className='worktitle'>Software Support Engineer I</span>
+                        <span className='worktitle'>Software Support Engineer</span>
                         <span className='company'>Analog Devices Inc - General Trias</span>
                         <span className='render'>April 2019 - Present</span>
                     </div>
