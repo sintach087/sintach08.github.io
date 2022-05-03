@@ -2,6 +2,7 @@
     flex-direction: column;
     color: black;
     font-family: 'PP Neue Machina';
+    margin-bottom: 3rem;
 
     .title {
         font-weight: 800;
@@ -10,12 +11,75 @@
         margin-bottom: 3rem;
     }
     .tools-container {
-        margin-bottom: 3rem;
-        
         .tools-card {
             width: 32vw;
             margin: 4vw;
             border: 0;
         }
     } 
+}
+
+@media only screen and (min-width: 576px) {
+    .tools {
+        max-width: 80%;
+
+        .tools-container {
+            .tools-card {
+                width: 28vw;
+                margin: 4vw;
+            }
+        } 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tools {   
+        max-width: 80%;
+
+        .tools-container {
+            .tools-card {
+                width: 24vw;
+                margin: 4vw;
+            }
+        } 
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .tools {   
+        max-width: 80%;
+
+        .tools-container {
+            .tools-card {
+                width: 20vw;
+                margin: 4vw;
+            }
+        } 
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .tools {   
+        max-width: 80%;
+
+        .tools-container {
+            .tools-card {
+                width: 16vw;
+                margin: 4vw;
+            }
+        } 
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .tools { 
+        max-width: 80%;
+
+        .tools-container {
+            .tools-card {
+                width: 12vw;
+                margin: 4vw;
+            }
+        } 
+    }
 }

@@ -1,0 +1,65 @@
+.contact {
+    flex-direction: column;
+    color: black;
+    font-family: 'PP Neue Machina';
+    margin-bottom: 3rem;
+    width: 95%;
+
+    .title {
+        font-weight: 800;
+        font-size: 35px;
+    }
+    h2 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .info {
+        margin-top: 2rem;
+        width: 80%;
+        font-size: 18px;
+
+        .name {
+            border:none;
+            border-bottom: 1px solid #1890ff;
+            padding: 5px 10px;
+            outline: none;
+            width: 100%;
+            letter-spacing: 1px;
+        }
+        .email {
+            border:none;
+            border-bottom: 1px solid #1890ff;
+            padding: 5px 10px;
+            outline: none;
+            width: 100%;
+            margin-top: 1rem;
+            letter-spacing: 1px;
+        }
+        .message {
+            border:none;
+            border-bottom: 1px solid #1890ff;
+            padding: 5px 10px;
+            outline: none;
+            width: 100%;
+            margin-top: 2rem;
+            letter-spacing: 1px;
+        }
+        input:focus {
+            border-bottom: 2px solid #1890ff;
+        }
+        textarea:focus {
+            border-bottom: 2px solid #1890ff;
+        }
+        [placeholder]:focus::-webkit-input-placeholder {
+            transition: text-indent 0.4s 0.4s ease; 
+            text-indent: -100%;
+            opacity: 1;
+        }
+    }
+    .send {
+        margin-top: 2rem;
+        width: 50%;
+        letter-spacing: 2px;
+        font-size: 16px;
+    }
+}

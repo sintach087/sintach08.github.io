@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import lineart from 'Images/lineart.png';
+import lineart from 'assets/images/lineart.png';
 
 const Main = () => {
     return (

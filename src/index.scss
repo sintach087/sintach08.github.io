@@ -5,14 +5,14 @@
   font-family: 'Hagrid';
   font-style: normal;
   font-weight: 300;
-  src: local('Hagrid-Light'), url(./Fonts/Hagrid-Light.woff2) format('woff2');
+  src: local('Hagrid-Light'), url(./assets/fonts/Hagrid-Light.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Hagrid';
   font-style: normal;
   font-weight: 400;
-  src: local('Hagrid'), url(./Fonts/Hagrid-Medium.woff2) format('woff2');
+  src: local('Hagrid'), url(./assets/fonts/Hagrid-Medium.woff2) format('woff2');
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local('Neue Machina Light'), url(./Fonts/NeueMachina-Light.otf) format('opentype');
+  src: local('Neue Machina Light'), url(./assets/fonts/NeueMachina-Light.otf) format('opentype');
 }
 
 @font-face {
@@ -28,7 +28,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('PP Neue Machina'), url(./Fonts/NeueMachina-Regular.otf) format('opentype');
+  src: local('PP Neue Machina'), url(./assets/fonts/NeueMachina-Regular.otf) format('opentype');
 }
 
 @font-face {
@@ -36,7 +36,7 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: local('PP Neue Machina SuperBold'), url(./Fonts/NeueMachina-bold.otf) format('opentype');
+  src: local('PP Neue Machina SuperBold'), url(./assets/fonts/NeueMachina-bold.otf) format('opentype');
 }
 
 *, :after, :before {

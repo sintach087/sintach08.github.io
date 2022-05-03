@@ -257,7 +257,7 @@
         }
     }
 }
-// Small devices (landscape phones, 576px and up)
+
 @media only screen and (min-width: 576px) { 
     .main {
         .header {
@@ -308,7 +308,6 @@
     }
 }
 
-// Medium devices (tablets, 768px and up)
 @media only screen and (min-width: 768px) { 
     .main {
         .header {
@@ -383,7 +382,6 @@
     }
 }
 
-// Large devices (desktops, 992px and up)
 @media only screen and (min-width: 992px) {
     .main {
         .header {
@@ -458,7 +456,6 @@
     }
 }
 
-// X-Large devices (large desktops, 1200px and up)
 @media only screen and (min-width: 1200px) {
     .main {
         .header {
@@ -535,7 +532,6 @@
     }
 }
 
-// XX-Large devices (larger desktops, 1400px and up)
 @media only screen and (min-width: 1400px) {
     .main {
         .header {

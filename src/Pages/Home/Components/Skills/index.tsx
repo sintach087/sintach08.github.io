@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense } from 'react';
 import './index.scss';
 import { FrontEnd, BackEnd, Others } from 'Data/Skills';
 import { GiGraduateCap } from 'react-icons/gi';
@@ -29,39 +29,45 @@ const Skill = () => {
                     </ul>
                     <div className='icon-container'>
                         {
-                            tabActive === 1 ? 
-                            <div className="icons-tab fade show" aria-labelledby="frontend">
+                            tabActive === 1 ?
+                            <Suspense fallback={<h1>Loading...</h1>}>
+                                <div className="icons-tab fade show" aria-labelledby="frontend">
+                                    {
+                                        frontend_data.map((x: any, y: any) => {
+                                            return <div className='iconlogo' key={y}>
+                                                    <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
+                                                    <span className="tooltiptext">{x.name}</span>
+                                                </div>
+                                        })
+                                    }
+                                </div>
+                            </Suspense>  :
+                            tabActive === 2 ?
+                            <Suspense fallback={<h1>Loading...</h1>}>
+                                <div className="icons-tab fade show" aria-labelledby="backend">
                                 {
-                                    frontend_data.map((x: any, y: any) => {
+                                    backend_data.map((x: any, y: any) => {
                                         return <div className='iconlogo' key={y}>
-                                                <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
-                                                <span className="tooltiptext">{x.name}</span>
-                                            </div>
+                                                    <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
+                                                    <span className="tooltiptext">{x.name}</span>
+                                                </div>
                                     })
                                 }
-                            </div> :
-                            tabActive === 2 ?
-                            <div className="icons-tab fade show" aria-labelledby="backend">
-                            {
-                                backend_data.map((x: any, y: any) => {
-                                    return <div className='iconlogo' key={y}>
-                                                <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
-                                                <span className="tooltiptext">{x.name}</span>
-                                            </div>
-                                })
-                            }
-                            </div> :
+                                </div>
+                            </Suspense>  :
                             tabActive === 3 ?
-                            <div className="icons-tab fade show" aria-labelledby="others">
-                            {
-                                others_data.map((x: any, y: any) => {
-                                    return <div className='iconlogo' key={y}>
-                                                <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
-                                                <span className="tooltiptext">{x.name}</span>
-                                            </div>
-                                })
-                            }
-                            </div> :
+                            <Suspense fallback={<h1>Loading...</h1>}>
+                                <div className="icons-tab fade show" aria-labelledby="others">
+                                {
+                                    others_data.map((x: any, y: any) => {
+                                        return <div className='iconlogo' key={y}>
+                                                    <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
+                                                    <span className="tooltiptext">{x.name}</span>
+                                                </div>
+                                    })
+                                }
+                                </div>
+                            </Suspense> :
                             null
                         }
                     </div>

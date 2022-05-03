@@ -1,0 +1,52 @@
+//font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+.projects {
+    flex-direction: column;
+    color: black;
+    font-family: 'PP Neue Machina';
+    margin-bottom: 3rem;
+    width: 95%;
+
+    .title {
+        font-weight: 800;
+        font-size: 35px;
+    }
+    .dev {
+        margin-top: 2rem;
+        align-self: flex-start;
+        padding: 10px;
+
+        .dev-title {
+            display: flex;
+
+            img {
+                width: calc(40px + (50 - 40) * ((100vw - 350px) / (1700 - 350)));
+                height: calc(40px + (50 - 40) * ((100vw - 350px) / (1700 - 350)));
+                margin-right: 0.6rem;
+                align-self: center;
+            }
+            span {
+                font-size: calc(26px + (35 - 26) * ((100vw - 350px) / (1700 - 350)));
+            }
+        }
+        .project {
+            margin-top: 0.8rem;
+
+            span {
+                font-size: calc(20px + (28 - 20) * ((100vw - 350px) / (1700 - 350)));
+                margin-bottom: 8px;
+                margin-top: 0.5rem;
+            }
+            p {
+                font-size: calc(15px + (20 - 15) * ((100vw - 350px) / (1700 - 350)));
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media only screen and  (min-width: 576px) {
+    .projects {
+        max-width: 80%;
+    }
+}

@@ -1,10 +1,10 @@
-import vcode from 'Images/Tools/visualstudiocode.png';
-import vs from 'Images/Tools/visualstudio.png';
-import git from 'Images/Tools/git.png';
-import office from 'Images/Tools/msoffice.png';
-import postman from 'Images/Tools/postman.png';
-import notepad from 'Images/Tools/notepad.png';
-import heidi from 'Images/Tools/heidi.png';
+import vcode from 'assets/images/tools/visualstudiocode.png';
+import vs from 'assets/images/tools/visualstudio.png';
+import git from 'assets/images/tools/git.png';
+import office from 'assets/images/tools/msoffice.png';
+import postman from 'assets/images/tools/postman.png';
+import notepad from 'assets/images/tools/notepad.png';
+import heidi from 'assets/images/tools/heidi.png';
 
 export const Tools_data = [
     {

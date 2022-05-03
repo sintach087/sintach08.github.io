@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import userimg from 'Images/profilepic.png';
+import userimg from 'assets/images/profilepic.png';
 
 const About = () => {
     return (
