@@ -16,22 +16,22 @@ const About = () => {
                         <ul>
                             <li>
                                 <a href='https://github.com/sintach087' target='_blank' rel='noreferrer'>
-                                    <img src="https://img.icons8.com/glyph-neue/128/000000/github.png" loading='lazy' alt='github'/>
+                                    <img className='grow' src="https://img.icons8.com/glyph-neue/128/000000/github.png" loading='lazy' alt='github'/>
                                 </a>
                             </li>
                             <li>
                                 <a href='https://www.facebook.com/sintach08' target='_blank' rel='noreferrer'>
-                                    <img src="https://img.icons8.com/color/144/000000/facebook-new.png" loading='lazy' alt='facebook'/>
+                                    <img className='grow' src="https://img.icons8.com/color/144/000000/facebook-new.png" loading='lazy' alt='facebook'/>
                                 </a>
                             </li>
                             <li>
                                 <a href='https://www.instagram.com/sintach_08' target='_blank' rel='noreferrer'>
-                                    <img src="https://img.icons8.com/color/144/000000/instagram-new--v1.png" loading='lazy' alt='instagram'/>
+                                    <img className='grow' src="https://img.icons8.com/color/144/000000/instagram-new--v1.png" loading='lazy' alt='instagram'/>
                                 </a>
                             </li>
                             <li>
                                 <a href='https://www.linkedin.com/in/javenill' target='_blank' rel='noreferrer'>
-                                    <img src="https://img.icons8.com/fluency/48/000000/linkedin.png" loading='lazy' alt='linkendin'/>
+                                    <img className='grow' src="https://img.icons8.com/fluency/48/000000/linkedin.png" loading='lazy' alt='linkendin'/>
                                 </a>
                             </li>
                         </ul>
