@@ -76,7 +76,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <section className='container-fluid d-flex justify-content-center align-items-center contact'>
+        <section className='container-fluid d-flex justify-content-center align-items-center contact' id='contact'>
             <Reveal duration={1500} effect="animate__animated animate__fadeInUp">
                 <h2 className='title'>CONTACT ME</h2>
             </Reveal>
