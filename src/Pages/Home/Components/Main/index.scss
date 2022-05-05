@@ -137,6 +137,40 @@
     }
 }
 
+@media only screen and (max-height: 640px) and (orientation: portrait) {
+    .main {
+        height: 150vh;
+
+        .main-sub {
+            height: calc(150vh - 76.783px) !important;
+
+            .lineart {
+                height: 40%
+            }
+            .contents {
+                height: 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-height: 742px) and (orientation: portrait) {
+    .main {
+        height: 120vh;
+
+        .main-sub {
+            height: calc(120vh - 76.783px) !important;
+
+            .lineart {
+                height: 40%
+            }
+            .contents {
+                height: 60%;
+            }
+        }
+    }
+}
+
 @media only screen and (min-height: 300px) and (orientation: landscape) {
     .main {
         height: 250vh;
