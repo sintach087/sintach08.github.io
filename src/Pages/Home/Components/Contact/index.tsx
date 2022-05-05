@@ -72,7 +72,7 @@ const Contact = () => {
     }
 
     useEffect(() => {
-        init('xhG2_MOH3YfiL-OBm');
+        init('PUBLIC_KEY');
     }, []);
 
     return (
