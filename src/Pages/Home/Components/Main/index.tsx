@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import lineart from 'assets/images/lineart.png';
+import lineart from 'assets/images/lineart.webp';
 const Reveal = require('react-reveal/Reveal');
 
 const Main = () => {
