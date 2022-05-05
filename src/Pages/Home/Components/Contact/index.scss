@@ -4,44 +4,38 @@
     font-family: 'PP Neue Machina';
     margin-bottom: 3rem;
     width: 95%;
+    overflow-x: hidden;
 
     .title {
         font-weight: 800;
         font-size: 35px;
     }
-    h2 {
+    h3 {
         margin-top: 2rem;
         text-align: center;
     }
     .info {
         margin-top: 2rem;
         width: 80%;
-        font-size: 18px;
+        font-size: calc(18px + (24 - 18) * ((100vw - 350px) / (1700 - 350)));
+        display: flex;
+        flex-direction: column;
 
         .name {
-            border:none;
-            border-bottom: 1px solid #1890ff;
-            padding: 5px 10px;
-            outline: none;
             width: 100%;
-            letter-spacing: 1px;
         }
         .email {
-            border:none;
-            border-bottom: 1px solid #1890ff;
-            padding: 5px 10px;
-            outline: none;
-            width: 100%;
             margin-top: 1rem;
-            letter-spacing: 1px;
         }
-        .message {
-            border:none;
+        .message {          
+            margin-top: 2rem;
+        }
+        input, textarea {
+            border: none;
             border-bottom: 1px solid #1890ff;
             padding: 5px 10px;
             outline: none;
             width: 100%;
-            margin-top: 2rem;
             letter-spacing: 1px;
         }
         input:focus {
@@ -55,11 +49,63 @@
             text-indent: -100%;
             opacity: 1;
         }
+        .send {
+            margin-top: 2rem;
+            width: 50%;
+            letter-spacing: 2px;
+            font-size: calc(16px + (22 - 16) * ((100vw - 350px) / (1700 - 350)));
+            align-self: center;
+            color: white;
+        }
     }
-    .send {
-        margin-top: 2rem;
-        width: 50%;
-        letter-spacing: 2px;
-        font-size: 16px;
+}
+
+@media (min-width: 576px) {
+    .contact {
+        width: 80%;
+
+        .info {
+            width: 75%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        .info {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .contact {
+        .info {
+            width: 65%;
+
+            .send {
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact {
+        .info {
+            width: 60%;
+
+            .send {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1400px) {
+    .contact {
+        .info {
+            width: 50%;
+        }
     }
 }

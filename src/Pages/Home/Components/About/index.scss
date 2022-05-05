@@ -4,6 +4,7 @@
     flex-direction: column;
     background-color: #d9d9d9;
     font-family: 'PP Neue Machina';
+    overflow-x: hidden;
 
     .about-me {
         font-weight: 800;
@@ -11,6 +12,8 @@
         margin-top: 5rem;
     }
     .desktop {
+        overflow-x: hidden;
+        
         .profilepic {
             width: 100%;
             height: 40%;

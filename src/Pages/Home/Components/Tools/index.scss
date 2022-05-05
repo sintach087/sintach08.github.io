@@ -3,6 +3,7 @@
     color: black;
     font-family: 'PP Neue Machina';
     margin-bottom: 3rem;
+    overflow-x: hidden;
 
     .title {
         font-weight: 800;
@@ -11,6 +12,8 @@
         margin-bottom: 3rem;
     }
     .tools-container {
+        overflow-x: hidden;
+        
         .tools-card {
             width: 32vw;
             margin: 4vw;

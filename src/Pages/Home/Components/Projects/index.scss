@@ -6,6 +6,7 @@
     font-family: 'PP Neue Machina';
     margin-bottom: 3rem;
     width: 95%;
+    overflow-x: hidden;
 
     .title {
         font-weight: 800;
@@ -15,6 +16,8 @@
         margin-top: 2rem;
         align-self: flex-start;
         padding: 10px;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
         .dev-title {
             display: flex;

@@ -1,5 +1,5 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800,300');
+@import '../node_modules/animate.css/animate.min.css';
 
 @font-face {
   font-family: 'Hagrid';
@@ -45,8 +45,14 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PP Neue Machina';
+  font-weight: 400;
+  max-width: 100vw;
 }
 
 ::-webkit-scrollbar {
