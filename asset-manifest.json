@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.04b002b1.css",
-    "main.js": "/static/js/main.6366e0bf.js",
+    "main.css": "/static/css/main.3460df7c.css",
+    "main.js": "/static/js/main.cb082482.js",
     "static/media/profilepic.png": "/static/media/profilepic.d9db05242e1b1cf743e7.png",
     "static/media/lineart.webp": "/static/media/lineart.a625923fd27e30d73f3e.webp",
     "static/media/NeueMachina-Regular.otf": "/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
@@ -10,7 +10,6 @@
     "static/media/react.webp": "/static/media/react.288789160fd68023c1aa.webp",
     "static/media/cplusplus.webp": "/static/media/cplusplus.e158737e1c5f011c7301.webp",
     "static/media/Hagrid-Medium.woff2": "/static/media/Hagrid-Medium.0a4e315388b6e69bea88.woff2",
-    "static/media/notepad.webp": "/static/media/notepad.cd9d54385758019a7453.webp",
     "static/media/swal.webp": "/static/media/swal.5804b2fd07d2a09c17eb.webp",
     "static/media/php.webp": "/static/media/php.e254676f5138ffc80788.webp",
     "static/media/blazor.webp": "/static/media/blazor.49f29c6b2bf868003bc0.webp",
@@ -18,22 +17,16 @@
     "static/media/bash.webp": "/static/media/bash.08efcedcca52bb588b45.webp",
     "static/media/sqlite.webp": "/static/media/sqlite.e005e0ce9ef3d05a8a19.webp",
     "static/media/dotnetcore.webp": "/static/media/dotnetcore.77e0e74530468cc91007.webp",
-    "static/media/postman.webp": "/static/media/postman.dfbb9ab38075f589727e.webp",
     "static/media/mariadb.webp": "/static/media/mariadb.0663df91e9ae71c80365.webp",
-    "static/media/heidi.webp": "/static/media/heidi.d511f13c471650e36443.webp",
     "static/media/nodejs.webp": "/static/media/nodejs.6957eb37d5f3051049a6.webp",
     "static/media/mysql.webp": "/static/media/mysql.89b64bbf69f3abccfec0.webp",
     "static/media/angular.webp": "/static/media/angular.4bedc564c83b82da022d.webp",
-    "static/media/visualstudiocode.webp": "/static/media/visualstudiocode.ce7b296da234ad38ef24.webp",
     "static/media/materialui.webp": "/static/media/materialui.9ddc7452e4bec555ce35.webp",
-    "static/media/visualstudio.webp": "/static/media/visualstudio.be976b2eb233a104038a.webp",
     "static/media/mssql.webp": "/static/media/mssql.d2d36532fd15892afdec.webp",
     "static/media/sh.webp": "/static/media/sh.516f0bd2f54570eac728.webp",
     "static/media/javascript.webp": "/static/media/javascript.e456abda90cb47719783.webp",
     "static/media/jquery.webp": "/static/media/jquery.3b948ea71e4ea3ea95a9.webp",
-    "static/media/msoffice.webp": "/static/media/msoffice.090003868ba726eb028e.webp",
     "static/media/csharp.webp": "/static/media/csharp.d27a32c34aae1305449b.webp",
-    "static/media/git.webp": "/static/media/git.7beb445c23c75edbc646.webp",
     "static/media/html5.webp": "/static/media/html5.634daa6cf16044a99e53.webp",
     "static/media/css3.webp": "/static/media/css3.36171b1693d42ccbeb74.webp",
     "static/media/msnet.webp": "/static/media/msnet.24b48bb5cd4af645e229.webp",
@@ -42,7 +35,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.04b002b1.css",
-    "static/js/main.6366e0bf.js"
+    "static/css/main.3460df7c.css",
+    "static/js/main.cb082482.js"
   ]
 }
