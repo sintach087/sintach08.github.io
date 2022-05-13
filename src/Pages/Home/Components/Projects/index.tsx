@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { WebDev, Desktop, Script } from 'Data/Projects';
+import { WebDev, Desktop, Script } from 'assets/data/Projects';
 const Reveal = require('react-reveal/Reveal');
 
 const Projects = () => {
@@ -12,7 +12,7 @@ const Projects = () => {
             <div className='d-flex dev flex-column'>
                 <Reveal effect="animate__animated animate__fadeInUp">
                     <div className='dev-title'>
-                        <img src="https://img.icons8.com/color/96/000000/domain--v1.png" loading='lazy' alt='WWW' />
+                        <img src="https://img.icons8.com/ios/100/ff478e/domain.png" loading='lazy' alt='WWW' />
                         <span>Web Development</span>
                     </div>
                 </Reveal>
@@ -20,10 +20,14 @@ const Projects = () => {
                     WebDev.map((x, y) => {
                         return (
                             <Reveal key={y} duration={1500} effect='animate__animated animate__fadeInUp'>
-                                <div className='project d-flex flex-column'>
-                                    <span>{x.projectname}</span>
-                                    <p>{x.details}</p>
-                                    <small><b>Tools:</b> {x.tools}</small>
+                                <div className='project-container'>
+                                    <img className='project-img' src={x.img} loading='lazy'/>
+                                    <div className='project-details'>
+                                        <p className='project-name'>{x.projectname}</p>
+                                        <div className='line'></div>
+                                        <p className='project-description'>{x.details}</p>
+                                        <p className='project-tools text-muted'>Tools: {x.tools}</p>
+                                    </div>
                                 </div>
                             </Reveal>
                         )
@@ -33,7 +37,7 @@ const Projects = () => {
             <div className='d-flex dev flex-column'>
                 <Reveal effect="animate__animated animate__fadeInUp">
                     <div className='dev-title'>
-                        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-desktop-web-hosting-flaticons-lineal-color-flat-icons.png" loading='lazy' alt='WWW' />
+                        <img src="https://img.icons8.com/ios/100/ff478e/monitor--v1.png" loading='lazy' alt='WWW' />
                         <span>Desktop Software Development</span>
                     </div>
                 </Reveal>
@@ -41,10 +45,14 @@ const Projects = () => {
                     Desktop.map((x,y) => {
                         return (
                             <Reveal key={y} duration={1500} effect='animate__animated animate__fadeInUp'>
-                                <div className='project d-flex flex-column'>
-                                    <span>{x.projectname}</span>
-                                    <p>{x.details}</p>
-                                    <small><b>Tools:</b> {x.tools}</small>
+                                <div className='project-container'>
+                                    <img className='project-img' src={x.img} loading='lazy'/>
+                                    <div className='project-details'>
+                                        <p className='project-name'>{x.projectname}</p>
+                                        <div className='line'></div>
+                                        <p className='project-description'>{x.details}</p>
+                                        <p className='project-tools text-muted'>Tools: {x.tools}</p>
+                                    </div>
                                 </div>
                             </Reveal>
                             
@@ -55,7 +63,7 @@ const Projects = () => {
             <div className='d-flex dev flex-column'>
                 <Reveal effect="animate__animated animate__fadeInUp">
                     <div className='dev-title'>
-                        <img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-script-advertising-icongeek26-outline-colour-icongeek26.png" loading='lazy' alt='WWW' />
+                        <img src="https://img.icons8.com/external-icongeek26-outline-icongeek26/64/ff478e/external-script-advertising-icongeek26-outline-icongeek26.png" loading='lazy' alt='WWW' />
                         <span>Script Development</span>
                     </div>
                 </Reveal>
@@ -63,10 +71,14 @@ const Projects = () => {
                     Script.map((x,y) => {
                         return (
                             <Reveal key={y} duration={1500} effect='animate__animated animate__fadeInUp'>
-                                <div className='project d-flex flex-column'>
-                                    <span>{x.projectname}</span>
-                                    <p>{x.details}</p>
-                                    <small><b>Tools:</b> {x.tools}</small>
+                                <div className='project-container'>
+                                    <img className='project-img' src={x.img} loading='lazy'/>
+                                    <div className='project-details'>
+                                        <p className='project-name'>{x.projectname}</p>
+                                        <div className='line'></div>
+                                        <p className='project-description'>{x.details}</p>
+                                        <p className='project-tools text-muted'>Tools: {x.tools}</p>
+                                    </div>
                                 </div>
                             </Reveal>
                         )

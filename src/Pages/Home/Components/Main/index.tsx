@@ -1,56 +1,189 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.scss';
 import lineart from 'assets/images/lineart.webp';
+import { navlinks } from 'assets/data/Links';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { CgProfile } from 'react-icons/cg';
+import { AnimatePresence, motion, useAnimation } from "framer-motion";
 const Reveal = require('react-reveal/Reveal');
 
 const Main = () => {
 
     const scrollToSection = (section: string) => {
         const sectionPage = document.getElementById(section);
+        setNavLinkMobile(false);
         if (sectionPage)
             sectionPage.scrollIntoView( { behavior: 'smooth', block: 'start' } );
     }
 
+    const [navLinkMobile, setNavLinkMobile] = useState<boolean>(false);
+
+    const animation = useAnimation();
+    const dummyVariants = {
+        hidden: {},
+        visible: {},
+    };
+
+    const parentMotion = {
+        hidden: {
+            opacity: 0,
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 0.3,
+                type: "ease",
+            },
+        },
+        exit: {
+            opacity: 0,
+        },
+    };
+    
+    const ulMotion = {
+        hidden: {
+          x: "-100%",
+        },
+        visible: {
+            x: "0%",
+            transition: {
+                type: "spring",
+                damping: 40,
+                stiffness: 300,
+            },
+        },
+        exit: {
+          x: "-100%",
+        },
+    };
+
+    const slideUp = (delay = 0) => {
+        return {
+          hidden: {
+            y: "100%",
+            opacity: 0,
+          },
+          visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                type: "spring",
+                mass: 1,
+                damping: 8,
+                stiffness: 20,
+                delay,
+            },
+          },
+        };
+    };
+
+    const slideMotion = (delay = 0, direction = 'left') => {
+        return {
+            hidden: {
+                x: direction === 'left' ? '-100%' : '100%',
+                opacity: 0,
+            },
+              visible: {
+                x: 0,
+                opacity: 1,
+                transition: {
+                  type: "spring",
+                  mass: 1,
+                  damping: 8,
+                  stiffness: 20,
+                  delay,
+                },
+            },
+        }
+    }
+
+    useEffect(() => {
+        animation.start("visible");
+    }, [animation]);
+
     return (
         <section className='container-fluid main'>
-            <div className='d-flex justify-content-end header'>
-                <ul className='d-flex'>
-                    <li className='underline-from-center li-about' onClick={() => scrollToSection('about')}>About</li>
-                    <li className='underline-from-center' onClick={() => scrollToSection('skills')}>Skills</li>
-                    <li className='underline-from-center' onClick={() => scrollToSection('tools')}>Tools</li>
-                    <li className='underline-from-center' onClick={() => scrollToSection('projects')}>Projects</li>
-                    <li className='underline-from-center' onClick={() => scrollToSection('contact')}>Contact</li>
+            <AnimatePresence initial={false} exitBeforeEnter>
+                {navLinkMobile &&
+                    <motion.div
+                        className='navmobile'
+                        onClick={() => setNavLinkMobile(false)}
+                        variants={parentMotion}
+                        initial='hidden'
+                        animate='visible'
+                        exit='exit'
+                        >
+                        <motion.ul
+                            className='navmobile-ul'
+                            onClick={(e) => e.stopPropagation()}
+                            variants={ulMotion}
+                        >
+                            {
+                                navlinks.map((x: any, y: any) => (
+                                    <li
+                                        key={y}
+                                        className='navmobile-li'
+                                        onClick={() => scrollToSection(x.id)}
+                                    >
+                                        {x.name}
+                                    </li>
+                                ))
+                            }
+                        </motion.ul>
+                    </motion.div>
+                }
+            </AnimatePresence>
+            <div className='d-flex header'>
+                <ul>
+                    {
+                        navlinks.map((x: any, y: any) => (
+                            <li
+                                key={y}
+                                className='underline-from-center'
+                                onClick={() => scrollToSection(x.id)}
+                            >
+                                {x.name}
+                            </li>
+                        ))
+                    }
                 </ul>
+                <div className='menu d-flex justify-content-between w-100'>
+                    <CgProfile style={{ fontSize: '34px', color: '#98e8cd'}}/>
+                    <div className='menu-icon-div'>
+                        <AiOutlineMenu className='menu-icon' onClick={() => setNavLinkMobile(true)}/>
+                    </div>
+                </div>
             </div>
-            <div className='main-sub'>
-                <Reveal delay={1000} duration={1200} effect='animate__animated animate__fadeInRight'>
+            <motion.div 
+                className='main-sub'
+                variants={dummyVariants}
+                initial='hidden'
+                animate={animation}
+                >
+                <Reveal duration={1200} effect='fade-in'>
                     <div className='lineart'>
                         <img src={lineart} alt='lineart'></img>
                     </div>
                 </Reveal>
-                <Reveal effect='fade-in'>
-                    <div className='d-flex justify-content-center align-items-center contents'>
-                        <div className='d-flex content'>
-                            <span className='first'>Hi there, I am</span>
-                            <Reveal delay={1000} duration={2000} count={2} effect='animate__animated animate__pulse'>
-                                <div className='name-title'>
-                                    <div className='style-left'></div>
-                                    <div className='style-right'></div>
-                                    <h1 className='second'>Jeanson Avenilla</h1>
-                                    <h2 className='third'>Software, System & Web Developer</h2>
-                                </div>
-                            </Reveal>
-                            <h3 className='fourth'>
-                                An electronics engineer, systems engineer and developer from the Philippines with over three years of experience in the industry. I have a serious passion for coding especially in software, system and full stack web development.
-                            </h3>
-                            <button className='button' onClick={() => scrollToSection('about')}>
-                                GET IN TOUCH
-                                <div className='style-button-line'></div>
-                            </button>
+                <div className='d-flex justify-content-center align-items-center contents'>
+                    <div className='d-flex content'>
+                        <span className='first'>Hi there, I am</span>
+                        <div className='name-title'>
+                            <motion.div className='style-left' variants={slideMotion(4.5, 'left')}></motion.div>
+                            <motion.div className='style-right' variants={slideMotion(4.5, 'right')}></motion.div>
+                            <motion.h1 className='second' variants={slideUp(1.2)}>Jeanson Avenilla</motion.h1>
+                            <motion.h2 className='third' variants={slideUp(1.8)}>Software Engineer & Developer</motion.h2>
                         </div>
+                        <motion.p className='fourth' variants={slideUp(3)}>
+                            I am a software engineer and developer from the Philippines with over three years of experience in the industry. I have a serious passion for coding software, system and web applications (full stack) specializing in building realtime system & automation.
+                        </motion.p>
+                        <motion.button className='button' onClick={() => scrollToSection('about')} variants={slideMotion(3.5, 'left')}>
+                            GET IN TOUCH
+                            <div className='style-button-line'></div>
+                        </motion.button>
                     </div>
-                </Reveal>
-            </div>
+                </div>
+            </motion.div>
         </section>
     )
 }

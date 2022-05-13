@@ -1,21 +1,39 @@
 import React, { useState } from 'react';
 import './index.scss';
-import { FrontEnd, BackEnd, Others } from 'Data/Skills';
+import { Skillsets } from 'assets/data/Skills';
 import { GiGraduateCap } from 'react-icons/gi';
 import { RiBriefcase4Line } from 'react-icons/ri';
+import { AnimatePresence, motion } from "framer-motion";
 const Reveal = require('react-reveal/Reveal');
 
 const Skill = () => {
     const [tabActive, setTabActive] = useState<number>(1);
 
-    let frontend_data = FrontEnd;
-    let backend_data = BackEnd;
-    let others_data = Others;
+    const variants = {
+        hidden: {
+            scale: 0,
+            opacity: 0,
+        },
+        visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+                duration: 0.3,
+            },
+        },
+        exit: {
+            scale: 0,
+            opacity: 0,
+            transition: {
+                duration: 0.3,
+            },
+        },
+    };
 
     return (
         <section className='container-fluid d-flex justify-content-center align-items-center skills'  id='skills'>
             <Reveal duration={1500} effect="animate__animated animate__fadeInUp">
-                <h2 className='title'>SKILLS</h2>
+                <h2 className='title'>SKILLS & EXPERIENCES</h2>
             </Reveal>
             <div className='skill-content'>
                 <Reveal duration={1500} effect={`animate__animated ${window.innerWidth < 992 ? 'animate__slideInLeft' : 'animate__slideInRight'}`}>
@@ -31,43 +49,36 @@ const Skill = () => {
                                 <button className={tabActive === 3 ? "nav-link active" : "nav-link"} type="button" onClick={() => setTabActive(3)}>OTHERS</button>
                             </li>
                         </ul>
-                        <div className='icon-container'>
-                            {
-                                tabActive === 1 ?
-                                <div className="icons-tab fade show" aria-labelledby="frontend">
-                                    {
-                                        frontend_data.map((x: any, y: any) => {
-                                            return <div className='iconlogo float-shadow' key={y}>
-                                                    <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
-                                                    <span className="tooltiptext">{x.name}</span>
-                                                </div>
-                                        })
-                                    }
-                                </div>  :
-                                tabActive === 2 ?
-                                <div className="icons-tab fade show" aria-labelledby="backend">
+                        <div className='icon-container'>    
+                            <div 
+                                className="icons-tab"
+                                aria-labelledby="frontend"
+                            >
+                                <AnimatePresence initial={false}>
                                 {
-                                    backend_data.map((x: any, y: any) => {
-                                        return <div className='iconlogo float-shadow' key={y}>
-                                                    <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
-                                                    <span className="tooltiptext">{x.name}</span>
-                                                </div>
-                                    })
+                                    Skillsets.map((x: any, y: any) => 
+                                        (tabActive === x.tab) && (
+                                            <motion.div 
+                                                className='iconlogo d-flex flex-column text-center'
+                                                key={y}
+                                                layout
+                                                variants={variants}
+                                                initial='hidden'
+                                                animate='visible'
+                                                exit='exit'
+                                            >
+                                                {
+                                                    x.alt === 'sweetalert2' ?
+                                                    <img src={y % 2 ? x.linkorange : x.linkgreen} className='icon-img-sweetalert2' alt={x.alt} loading='lazy'/> :
+                                                    <x.link className={`icon-img ${y % 2 ? 'icon-img-even' : 'icon-img-odd'}`} />
+                                                }                                               
+                                                <p className='icon-name'>{x.name}</p>
+                                            </motion.div>
+                                        )
+                                    )
                                 }
-                                </div>  :
-                                tabActive === 3 ?
-                                <div className="icons-tab fade show" aria-labelledby="others">
-                                {
-                                    others_data.map((x: any, y: any) => {
-                                        return <div className='iconlogo float-shadow' key={y}>
-                                                    <img src={x.link} alt={x.alt} width={x.width} height={x.height}/>
-                                                    <span className="tooltiptext">{x.name}</span>
-                                                </div>
-                                    })
-                                }
-                                </div> :
-                                null
-                            }
+                                </AnimatePresence>
+                            </div>
                         </div>
                     </div>
                 </Reveal>

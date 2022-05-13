@@ -1,6 +1,12 @@
 import React from 'react';
 import './index.scss';
 import userimg from 'assets/images/profilepic.png';
+import {
+    BsGithub,
+    BsFacebook,
+    BsInstagram,
+    BsLinkedin
+} from 'react-icons/bs';
 const Reveal = require('react-reveal/Reveal');
 
 const About = () => {
@@ -16,22 +22,22 @@ const About = () => {
                         <ul>
                             <li>
                                 <a href='https://github.com/sintach087' target='_blank' rel='noreferrer'>
-                                    <img className='grow' src="https://img.icons8.com/glyph-neue/128/000000/github.png" loading='lazy' alt='github'/>
+                                    <BsGithub className='grow img-odd' />
                                 </a>
                             </li>
                             <li>
                                 <a href='https://www.facebook.com/sintach08' target='_blank' rel='noreferrer'>
-                                    <img className='grow' src="https://img.icons8.com/color/144/000000/facebook-new.png" loading='lazy' alt='facebook'/>
+                                    <BsFacebook className='grow img-even' />
                                 </a>
                             </li>
                             <li>
                                 <a href='https://www.instagram.com/sintach_08' target='_blank' rel='noreferrer'>
-                                    <img className='grow' src="https://img.icons8.com/color/144/000000/instagram-new--v1.png" loading='lazy' alt='instagram'/>
+                                    <BsInstagram className='grow img-odd' />
                                 </a>
                             </li>
                             <li>
                                 <a href='https://www.linkedin.com/in/javenill' target='_blank' rel='noreferrer'>
-                                    <img className='grow' src="https://img.icons8.com/fluency/48/000000/linkedin.png" loading='lazy' alt='linkendin'/>
+                                    <BsLinkedin className='grow img-even' />
                                 </a>
                             </li>
                         </ul>

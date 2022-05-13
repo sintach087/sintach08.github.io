@@ -54,8 +54,8 @@ const Contact = () => {
                                     console.log(`Success: ${result.text} | ${result.status}`);
                                 },
                                 (error) => {
-                                    msgbox.Error(`Error: ${error.text}`);
-                                    console.log(`Error: ${error.text}`);
+                                    msgbox.Error(`Error: ${error}`);
+                                    console.log(`Error: ${error}`);
                                 }
                             );
                         }
@@ -72,7 +72,7 @@ const Contact = () => {
     }
 
     useEffect(() => {
-        init('PUBLIC_KEY');
+        init('xhG2_MOH3YfiL-OBm');
     }, []);
 
     return (

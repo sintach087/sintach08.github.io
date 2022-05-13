@@ -1,6 +1,5 @@
 .contact {
     flex-direction: column;
-    color: black;
     font-family: 'PP Neue Machina';
     margin-bottom: 3rem;
     width: 95%;
@@ -13,6 +12,7 @@
     h3 {
         margin-top: 2rem;
         text-align: center;
+        color: rgba(255,71,143,255);
     }
     .info {
         margin-top: 2rem;
@@ -32,17 +32,20 @@
         }
         input, textarea {
             border: none;
-            border-bottom: 1px solid #1890ff;
+            border-bottom: 1px solid #98e8cd;
             padding: 5px 10px;
             outline: none;
             width: 100%;
             letter-spacing: 1px;
+            background: rgb(10, 25, 41);
+            color: white;
         }
         input:focus {
-            border-bottom: 2px solid #1890ff;
+            border-bottom: 2px solid #98e8cd;
+
         }
         textarea:focus {
-            border-bottom: 2px solid #1890ff;
+            border-bottom: 2px solid #98e8cd;
         }
         [placeholder]:focus::-webkit-input-placeholder {
             transition: text-indent 0.4s 0.4s ease; 
@@ -56,6 +59,12 @@
             font-size: calc(16px + (22 - 16) * ((100vw - 350px) / (1700 - 350)));
             align-self: center;
             color: white;
+            background-color: #d04b16;
+            border-color: #d04b16;
+        }
+        .send:hover {
+            background-color: #bf3e0b;
+            border-color: #bf3e0b;
         }
     }
 }
