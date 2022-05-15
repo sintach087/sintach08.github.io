@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5e8817bf.css",
+    "main.css": "/static/css/main.2b0a3ea9.css",
     "main.js": "/static/js/main.57507e1f.js",
     "static/media/profilepic.png": "/static/media/profilepic.d9db05242e1b1cf743e7.png",
     "static/media/dataviewer.webp": "/static/media/dataviewer.a2fbb59b426c90f55843.webp",
@@ -23,16 +23,14 @@
     "static/media/driftfiletransfer.webp": "/static/media/driftfiletransfer.0823e5878b944e9506e8.webp",
     "static/media/hardwareinventoryweb.webp": "/static/media/hardwareinventoryweb.e13fe131cec62ba644a4.webp",
     "static/media/mvtsdl2sum.webp": "/static/media/mvtsdl2sum.b9d19756686d00153eb6.webp",
-    "static/media/Hagrid-Regular.woff2": "/static/media/Hagrid-Regular.16af7011ad57014e60d4.woff2",
     "static/media/nonstdfcollection.webp": "/static/media/nonstdfcollection.79e305c405cae9a4c51e.webp",
-    "static/media/Hagrid-Light.woff2": "/static/media/Hagrid-Light.6ef517c32789de2d604a.woff2",
     "static/media/spinktools.webp": "/static/media/spinktools.7f056508f841be9b5104.webp",
     "static/media/sweetalert2orange.webp": "/static/media/sweetalert2orange.0473fda87e3a04d4a89d.webp",
     "static/media/sweetalert2green.webp": "/static/media/sweetalert2green.452dc9cb3621cf71c96c.webp",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.5e8817bf.css",
+    "static/css/main.2b0a3ea9.css",
     "static/js/main.57507e1f.js"
   ]
 }
