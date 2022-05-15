@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.28e979eb.css",
+    "main.css": "/static/css/main.061622dc.css",
     "main.js": "/static/js/main.00a52098.js",
     "static/media/profilepic.png": "/static/media/profilepic.d9db05242e1b1cf743e7.png",
     "static/media/dataviewer.webp": "/static/media/dataviewer.a2fbb59b426c90f55843.webp",
@@ -20,12 +20,10 @@
     "static/media/testersoftwareversion.webp": "/static/media/testersoftwareversion.a84ca116c3db1dba823a.webp",
     "static/media/alertdashboard.webp": "/static/media/alertdashboard.9ffa47fc4b321be36fd6.webp",
     "static/media/supplementalfileupload.webp": "/static/media/supplementalfileupload.76792e5b9738af4fc942.webp",
-    "static/media/Hagrid-Medium.woff2": "/static/media/Hagrid-Medium.0a4e315388b6e69bea88.woff2",
     "static/media/driftfiletransfer.webp": "/static/media/driftfiletransfer.0823e5878b944e9506e8.webp",
     "static/media/hardwareinventoryweb.webp": "/static/media/hardwareinventoryweb.e13fe131cec62ba644a4.webp",
     "static/media/mvtsdl2sum.webp": "/static/media/mvtsdl2sum.b9d19756686d00153eb6.webp",
     "static/media/nonstdfcollection.webp": "/static/media/nonstdfcollection.79e305c405cae9a4c51e.webp",
-    "static/media/Hagrid-Light.woff2": "/static/media/Hagrid-Light.6ef517c32789de2d604a.woff2",
     "static/media/spinktools.webp": "/static/media/spinktools.7f056508f841be9b5104.webp",
     "static/media/logo.webp": "/static/media/logo.3db1d4fb3fa29d844006.webp",
     "static/media/sweetalert2orange.webp": "/static/media/sweetalert2orange.0473fda87e3a04d4a89d.webp",
@@ -33,7 +31,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.28e979eb.css",
+    "static/css/main.061622dc.css",
     "static/js/main.00a52098.js"
   ]
 }
