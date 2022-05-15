@@ -21,7 +21,7 @@ const Projects = () => {
                         return (
                             <Reveal key={y} duration={1500} effect='animate__animated animate__fadeInUp'>
                                 <div className='project-container'>
-                                    <img className='project-img' src={x.img} loading='lazy'/>
+                                    <img className='project-img' src={x.img} loading='lazy' alt={x.projectname}/>
                                     <div className='project-details'>
                                         <p className='project-name'>{x.projectname}</p>
                                         <div className='line'></div>
@@ -46,7 +46,7 @@ const Projects = () => {
                         return (
                             <Reveal key={y} duration={1500} effect='animate__animated animate__fadeInUp'>
                                 <div className='project-container'>
-                                    <img className='project-img' src={x.img} loading='lazy'/>
+                                    <img className='project-img' src={x.img} loading='lazy' alt={x.projectname}/>
                                     <div className='project-details'>
                                         <p className='project-name'>{x.projectname}</p>
                                         <div className='line'></div>
@@ -72,7 +72,7 @@ const Projects = () => {
                         return (
                             <Reveal key={y} duration={1500} effect='animate__animated animate__fadeInUp'>
                                 <div className='project-container'>
-                                    <img className='project-img' src={x.img} loading='lazy'/>
+                                    <img className='project-img' src={x.img} loading='lazy' alt={x.projectname}/>
                                     <div className='project-details'>
                                         <p className='project-name'>{x.projectname}</p>
                                         <div className='line'></div>

@@ -22,7 +22,9 @@ import {
     SiSqlite,
     SiDotnet,
     SiGnubash,
-    SiCplusplus
+    SiCplusplus,
+    SiFramer,
+    SiTailwindcss
 } from 'react-icons/si';
 
 export const Skillsets = [
@@ -90,13 +92,25 @@ export const Skillsets = [
         linkorange: sweetalert2orange,
         linkgreen: sweetalert2green,
         alt: 'sweetalert2',
-        name: 'Sweetalert2',
+        name: 'Sweetalert',
         tab: 1,
     },
     {
         link: SiChartdotjs,
         alt: 'chartjs',
         name: 'ChartJS',
+        tab: 1,
+    },
+    {
+        link: SiFramer,
+        alt: 'framer',
+        name: 'Framer',
+        tab: 1,
+    },
+    {
+        link: SiTailwindcss,
+        alt: 'tailwindcss',
+        name: 'Tailwind',
         tab: 1,
     },
     {

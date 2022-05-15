@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './index.scss';
 import lineart from 'assets/images/lineart.webp';
+import logo from 'assets/images/logo.webp';
 import { navlinks } from 'assets/data/Links';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { CgProfile } from 'react-icons/cg';
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 const Reveal = require('react-reveal/Reveal');
 
@@ -83,7 +83,7 @@ const Main = () => {
                 x: direction === 'left' ? '-100%' : '100%',
                 opacity: 0,
             },
-              visible: {
+            visible: {
                 x: 0,
                 opacity: 1,
                 transition: {
@@ -91,11 +91,31 @@ const Main = () => {
                   mass: 1,
                   damping: 8,
                   stiffness: 20,
-                  delay,
+                  delay
                 },
             },
         }
-    }
+    };
+
+    const slideMotion2 = {
+        hidden: {
+            x: '-100%',
+            opacity: 0,
+        },
+        visible: {
+            x: ['-100%', '400%', '-100%', '70%', '0%'],
+            opacity: 1,
+            transition: {
+              type: "spring",
+              mass: 1,
+              damping: 8,
+              stiffness: 20,
+              delay: 4,
+              duration: 3,
+              times: [0, 0.5, 0.5, 0.8, 1]
+            },
+        },
+    };
 
     useEffect(() => {
         animation.start("visible");
@@ -148,7 +168,7 @@ const Main = () => {
                     }
                 </ul>
                 <div className='menu d-flex justify-content-between w-100'>
-                    <CgProfile style={{ fontSize: '34px', color: '#98e8cd'}}/>
+                    <img src={logo} width={36} height={36} alt='logo'/>
                     <div className='menu-icon-div'>
                         <AiOutlineMenu className='menu-icon' onClick={() => setNavLinkMobile(true)}/>
                     </div>
@@ -179,7 +199,7 @@ const Main = () => {
                         </motion.p>
                         <motion.button className='button' onClick={() => scrollToSection('about')} variants={slideMotion(3.5, 'left')}>
                             GET IN TOUCH
-                            <div className='style-button-line'></div>
+                            <motion.div className='style-button-line' variants={slideMotion2}></motion.div>
                         </motion.button>
                     </div>
                 </div>

@@ -32,13 +32,13 @@ export const WebDev = [
     },
     {
         projectname: 'A5 UPH RE Automation',
-        details: 'A real time A5 testers monitoring system and dashboard that automatically calculates the real-time Units Per Hour (UPH) capacity of a Legacy ATE and display it to web using tables and graphs which prevents error caused by manual data extraction and calculation.',
+        details: 'A real-time A5 testers monitoring system and dashboard that automatically calculates the real-time Units Per Hour (UPH) capacity of a Legacy ATE and display it to web using tables and graphs which prevents error caused by manual data extraction and calculation.',
         tools: 'HTML, SCSS, React.js, C#, PHP, Shell (SH) Script, MySQL, ChartJS',
         img: uphmonitoring
     },
     {
         projectname: 'Engineering Purging Tool',
-        details: 'A tool used to real time monitor and delete the Engineering and unnecessary Windows files of an Engineering ATEs to free up storage space.',
+        details: 'A tool used to real-time monitor and delete the Engineering and unnecessary Windows files of an Engineering ATEs to free up storage space.',
         tools: 'HTML, SCSS, React.js, C# ASP.NET Core, PHP, Shell (SH) Scripts, MySQL, ChartJS',
         img: engineeringpurgingtool
     },
@@ -80,7 +80,7 @@ export const WebDev = [
     },
     {
         projectname: 'Xymon Alert Dashboard',
-        details: 'A realtime dashboard monitoring of testers alert and warnings reported by xymon monitoring',
+        details: 'A real-time dashboard monitoring of testers alert and warnings reported by xymon monitoring',
         tools: 'HTML, CSS, PHP, MySQL, Jquery, ChartJS',
         img: alertdashboard
     },

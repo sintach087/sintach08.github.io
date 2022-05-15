@@ -21,7 +21,10 @@
 
         .skill-tabs {
             position: relative;
-            padding: 1.5rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
             margin-right: 0;
             margin-left: 0;
             border-top-left-radius: 0.25rem;
@@ -52,9 +55,10 @@
             .icon-container {
                 margin-top: 2rem;
                 width: 100%;
-                height: 700px;
+                height: 650px;
                 overflow-y: hidden;
                 padding: 1rem;
+                margin-bottom: 1rem;
     
                 .icons-tab {
                     display: flex;
@@ -71,14 +75,14 @@
                         
                         .icon-img-sweetalert2 {
                             margin: 15px;
-                            height: calc(78px + (90 - 78) * ((100vw - 350px) / (1700 - 350)));
-                            width: calc(78px + (90 - 78) * ((100vw - 350px) / (1700 - 350)));
+                            height: calc(52px + (82 - 52) * ((100vw - 350px) / (1700 - 350)));
+                            width: calc(52px + (82 - 52) * ((100vw - 350px) / (1700 - 350)));
                             cursor: pointer;
                         }
                         .icon-img {
                             margin: 15px;
                             cursor: pointer;
-                            font-size: calc(65px + (80 - 65) * ((100vw - 350px) / (1700 - 350)));
+                            font-size: calc(50px + (80 - 50) * ((100vw - 350px) / (1700 - 350)));
                         }
                         .icon-img-even {
                             color: #d04b16;
@@ -87,7 +91,8 @@
                             color: #98e8cd; 
                         }
                         .icon-name {
-                            display: none;
+                            display: block;
+                            font-size: 14px;
                         }
                     }
                     .iconlogo:hover {
@@ -193,7 +198,7 @@
                     font-size: 13px;
                 }
                 .icon-container {
-                    height: 485px;
+                    height: 670px;
                 }
             }
             .personal {
@@ -221,7 +226,7 @@
                     font-size: 18px;
                 }              
                 .icon-container {
-                    height: 390px;
+                    height: 420px;
                 }
             }
             .personal { 
@@ -266,7 +271,7 @@
                     font-size: 18px;
                 } 
                 .icon-container {
-                    height: 382px;
+                    height: 430px;
 
                     .icons-tab {
                         .iconlogo {
@@ -325,7 +330,7 @@
                     font-size: 18px;
                 } 
                 .icon-container {
-                    height: 392px;
+                    height: 480px;
 
                     .icons-tab {
                         .iconlogo {

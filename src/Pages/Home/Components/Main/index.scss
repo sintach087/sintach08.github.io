@@ -1,5 +1,5 @@
 .main {
-    height: 100vh;
+    height: 800px;
     
     .navmobile {
         position: fixed;
@@ -82,7 +82,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: calc(100vh - 75.283px);
+        height: calc(800px - 76.783px);
         margin-top: -30px;
         overflow-x: hidden;
 
@@ -92,7 +92,7 @@
             justify-content: center;
             width: 90%;
             margin: 30px;
-            height: 45%;
+            height: 43%;
 
             img {
                 width: 360px;
@@ -101,7 +101,7 @@
         }
         .contents {
             overflow: hidden;
-            height: 55%;
+            height: 57%;
 
             .content {
                 width: 90%;
@@ -125,8 +125,8 @@
                         border-left: 1px solid red;
                         width: 35px;
                         height: 35px;
-                        top: 0.75rem;
-                        left: -5px;
+                        top: 0.25rem;
+                        left: 0px;
                     }
                     .style-right {
                         position: absolute;
@@ -134,13 +134,14 @@
                         border-right: 1px solid red;
                         width: 35px;
                         height: 35px;
-                        bottom: -0.5rem;
-                        right: -5px;
+                        bottom: 0rem;
+                        right: 0px;
                     }
                     .second {
                         font-size: 37px;
                         margin-top: 0.5rem;
-                        font-family: 'Hagrid';
+                        // font-family: 'Hagrid';
+                        font-family: 'Hagrid Trial', sans-serif;
                         font-weight: 400;
                         color: #98e8cd;
                     }
@@ -185,46 +186,29 @@
     }
 }
 
-@media only screen and (max-height: 640px) and (orientation: portrait) {
+@media only screen and (min-height: 800px) {
     .main {
-        height: 150vh;
+        height: 100vh !important;
 
         .main-sub {
-            height: calc(150vh - 76.783px) !important;
+            height: calc(100vh - 76.783px) !important;
 
             .lineart {
-                height: 40%
+                height: 43%;
             }
             .contents {
-                height: 60%;
+                height: 57%;
             }
         }
     }
 }
 
-@media only screen and (max-height: 742px) and (orientation: portrait) {
+@media only screen and (min-height: 300px) and (min-width: 400px) and (orientation: landscape) {
     .main {
-        height: 120vh;
+        height: 800px !important;
 
         .main-sub {
-            height: calc(120vh - 76.783px) !important;
-
-            .lineart {
-                height: 40%
-            }
-            .contents {
-                height: 60%;
-            }
-        }
-    }
-}
-
-@media only screen and (min-height: 300px) and (orientation: landscape) {
-    .main {
-        height: 250vh;
-
-        .main-sub {
-            height: calc(250vh - 76.783px) !important;
+            height: calc(800px - 76.783px) !important;
 
             .contents {
                 height: 90% !important;
@@ -235,57 +219,17 @@
 
 @media only screen and (min-height: 300px) and (min-width: 768px) and (orientation: landscape) {
     .main {
-        height: 180vh;
+        height: 570px !important;
 
         .main-sub {
-            height: calc(180vh - 76.783px) !important;
+            height: calc(570px - 76.783px) !important;
         }
     }
 }
 
-@media only screen and (min-height: 400px) and (orientation: landscape) {
+@media only screen and (min-height: 600px) and (min-width: 768px) and (orientation: landscape) {
     .main {
-        height: 200vh;
-
-        .main-sub {
-            height: calc(200vh - 76.783px) !important;
-        }
-    }
-}
-
-@media only screen and (min-height: 400px) and (min-width: 768px) and (orientation: landscape) {
-    .main {
-        height: 130vh;
-
-        .main-sub {
-            height: calc(130vh - 76.783px) !important;
-        }
-    }
-}
-
-@media only screen and (min-height: 500px) and (orientation: landscape) {
-    .main {
-        height: 150vh;
-
-        .main-sub {
-            height: calc(150vh - 76.783px) !important;
-        }
-    }
-}
-
-@media only screen and (min-height: 500px) and (min-width: 768px) and (orientation: landscape) {
-    .main {
-        height: 100vh;
-
-        .main-sub {
-            height: calc(100vh - 76.783px) !important;
-        }
-    }
-}
-
-@media only screen and (min-height: 600px) and (orientation: landscape) {
-    .main {
-        height: 100vh;
+        height: 100vh !important;
 
         .main-sub {
             height: calc(100vh - 76.783px) !important;
@@ -311,8 +255,6 @@
             }
         }
         .main-sub {
-            height: calc(100vh - 76.783px);
-
             .contents { 
                 .content {        
                     .first {
@@ -366,14 +308,7 @@
             }
         }
         .main-sub {
-            height: calc(100vh - 76.783px);
-
-            .lineart {
-                height: 43%;
-            }
             .contents { 
-                height: 57%;
-                
                 .content {        
                     .first {
                         font-size: 20px;
