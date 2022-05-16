@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import './index.scss';
 import emailjs, { EmailJSResponseStatus, init } from "@emailjs/browser";
 import Swal from 'sweetalert2';

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './index.scss';
 import { Skillsets } from 'assets/data/Skills';
 import { GiGraduateCap } from 'react-icons/gi';
@@ -38,7 +38,7 @@ const Skill = () => {
             <div className='skill-content'>
                 <Reveal duration={1500} effect={`animate__animated ${window.innerWidth < 992 ? 'animate__slideInLeft' : 'animate__slideInRight'}`}>
                     <div className='skill-tabs'>
-                        <ul className="nav nav-tabs" role="tablist">
+                        <ul className="nav nav-tabs">
                             <li className="nav-item">
                                 <button className={tabActive === 1 ? "nav-link active" : "nav-link"} type="button" onClick={() => setTabActive(1)}>FRONTEND</button>
                             </li>
@@ -52,7 +52,6 @@ const Skill = () => {
                         <div className='icon-container'>    
                             <div 
                                 className="icons-tab"
-                                aria-labelledby="frontend"
                             >
                                 <AnimatePresence initial={false}>
                                 {

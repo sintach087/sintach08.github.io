@@ -1,6 +1,5 @@
-import React from 'react';
 import './index.scss';
-import userimg from 'assets/images/profilepic.webp';
+import userimg_xs from 'assets/images/profilepic_xs.webp';
 import {
     BsGithub,
     BsFacebook,
@@ -18,25 +17,29 @@ const About = () => {
             <div className='desktop'>
                 <Reveal effect='fade-in'>
                     <div className='profilepic d-flex justify-content-center align-items-center flex-column'>
-                        <img className='pic' src={userimg} alt="profilepic"/>
+                        <img 
+                            className='pic' 
+                            src={userimg_xs}
+                            alt="profilepic"
+                        />
                         <ul>
                             <li>
-                                <a href='https://github.com/sintach087' target='_blank' rel='noreferrer'>
+                                <a href='https://github.com/sintach087' aria-label="github" target='_blank' rel='noreferrer'>
                                     <BsGithub className='grow img-odd' />
                                 </a>
                             </li>
                             <li>
-                                <a href='https://www.facebook.com/sintach08' target='_blank' rel='noreferrer'>
+                                <a href='https://www.facebook.com/sintach08' aria-label="facebook" target='_blank' rel='noreferrer'>
                                     <BsFacebook className='grow img-even' />
                                 </a>
                             </li>
                             <li>
-                                <a href='https://www.instagram.com/sintach_08' target='_blank' rel='noreferrer'>
+                                <a href='https://www.instagram.com/sintach_08' aria-label="instagram" target='_blank' rel='noreferrer'>
                                     <BsInstagram className='grow img-odd' />
                                 </a>
                             </li>
                             <li>
-                                <a href='https://www.linkedin.com/in/javenill' target='_blank' rel='noreferrer'>
+                                <a href='https://www.linkedin.com/in/javenill' aria-label="linkedin" target='_blank' rel='noreferrer'>
                                     <BsLinkedin className='grow img-even' />
                                 </a>
                             </li>

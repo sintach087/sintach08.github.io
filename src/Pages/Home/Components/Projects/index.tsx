@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.scss';
 import { WebDev, Desktop, Script } from 'assets/data/Projects';
 const Reveal = require('react-reveal/Reveal');

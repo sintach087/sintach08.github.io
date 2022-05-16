@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './index.scss';
-import lineart from 'assets/images/lineart.webp';
-import logo from 'assets/images/logo.webp';
 import { navlinks } from 'assets/data/Links';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
+import lineart_sm from 'assets/images/lineart_sm.webp';
+import logo from 'assets/images/logo.webp';
+import ImagePreloader from 'common/ImagePreloader';
 const Reveal = require('react-reveal/Reveal');
 
 const Main = () => {
@@ -168,7 +169,7 @@ const Main = () => {
                     }
                 </ul>
                 <div className='menu d-flex justify-content-between w-100'>
-                    <img src={logo} width={36} height={36} alt='logo'/>
+                    <img src={logo} width={36} height={36} alt='logo' loading='lazy'/>
                     <div className='menu-icon-div'>
                         <AiOutlineMenu className='menu-icon' onClick={() => setNavLinkMobile(true)}/>
                     </div>
@@ -182,7 +183,10 @@ const Main = () => {
                 >
                 <Reveal duration={1200} effect='fade-in'>
                     <div className='lineart'>
-                        <img src={lineart} alt='lineart'></img>
+                        <ImagePreloader
+                            src={lineart_sm}
+                            alt='lineart' 
+                        />
                     </div>
                 </Reveal>
                 <div className='d-flex justify-content-center align-items-center contents'>
