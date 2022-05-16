@@ -5,17 +5,15 @@ import 'common/effects.scss';
 const Home = () => {
 
     return (
-        <>
-            <React.Suspense fallback='Loading . . .'>
-                <Main />
-            </React.Suspense>
+        <React.Suspense fallback='Loading . . .'>
+            <Main />
             <About />
             <Skills />
             <Tools />
             <Projects />
             <Contact />
             <Footer />
-        </>
+        </React.Suspense>
     )
 }
 

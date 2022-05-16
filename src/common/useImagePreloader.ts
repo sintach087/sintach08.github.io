@@ -13,7 +13,7 @@ const preloadImage = (src: string) => {
     })
 }
 
-const ImagePreloader = (props: any) => {
+export const useImagePreloader = (src: any) => {
     const [load, setLoad] = useState<boolean>(false);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const ImagePreloader = (props: any) => {
                 return;
             }
 
-            await preloadImage(props.src);
+            await preloadImage(src);
 
             if (isCancelled) {
                 return;
@@ -40,11 +40,7 @@ const ImagePreloader = (props: any) => {
             isCancelled = true;
         }
         
-    }, [props])
+    }, [src])
 
-    return (
-        <img src={props.src} {...props} style={{ opacity: load ? 1 : 0}} alt={props.alt ? props.alt : 'preloadImage'} />
-    );
+    return load;
 }
-
-export default ImagePreloader;
