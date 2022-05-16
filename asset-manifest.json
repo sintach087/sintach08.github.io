@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.e9112feb.css",
-    "main.js": "/static/js/main.f4dd4a35.js",
+    "main.js": "/static/js/main.c4adc492.js",
     "static/media/dataviewer.webp": "/static/media/dataviewer.a2fbb59b426c90f55843.webp",
     "static/media/engineeringpurgingtool.webp": "/static/media/engineeringpurgingtool.96a7d3348cbceaa12580.webp",
     "static/media/licenseddeniedreport.webp": "/static/media/licenseddeniedreport.8386794d65fda4403b00.webp",
     "static/media/uphmonitoring.webp": "/static/media/uphmonitoring.5923bbc419bc3c948111.webp",
     "static/media/pdfexensio.webp": "/static/media/pdfexensio.b144bedd3044be843351.webp",
     "static/media/testlotsummary.webp": "/static/media/testlotsummary.4f1b8c118b1988080b87.webp",
-    "static/media/profilepic_sm.webp": "/static/media/profilepic_sm.a9f6e167985a7d9eae12.webp",
     "static/media/hardwareinventorydesktop.webp": "/static/media/hardwareinventorydesktop.0c9781ac78d0955b2ef2.webp",
     "static/media/scripting.webp": "/static/media/scripting.2bedf398feeeaed12af9.webp",
     "static/media/NeueMachina-Regular.otf": "/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
@@ -33,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.e9112feb.css",
-    "static/js/main.f4dd4a35.js"
+    "static/js/main.c4adc492.js"
   ]
 }
