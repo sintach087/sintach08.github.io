@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e9112feb.css",
-    "main.js": "/static/js/main.d3898f81.js",
+    "main.js": "/static/js/main.f4dd4a35.js",
     "static/media/dataviewer.webp": "/static/media/dataviewer.a2fbb59b426c90f55843.webp",
-    "static/media/lineart.webp": "/static/media/lineart.a625923fd27e30d73f3e.webp",
     "static/media/engineeringpurgingtool.webp": "/static/media/engineeringpurgingtool.96a7d3348cbceaa12580.webp",
     "static/media/licenseddeniedreport.webp": "/static/media/licenseddeniedreport.8386794d65fda4403b00.webp",
     "static/media/uphmonitoring.webp": "/static/media/uphmonitoring.5923bbc419bc3c948111.webp",
@@ -34,6 +33,6 @@
   },
   "entrypoints": [
     "static/css/main.e9112feb.css",
-    "static/js/main.d3898f81.js"
+    "static/js/main.f4dd4a35.js"
   ]
 }
