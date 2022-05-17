@@ -19,16 +19,16 @@ export const useImagePreloader = (src: any) => {
     useEffect(() => {
         let isCancelled = false;
 
-        async function loadImage() {
+        const loadImage = async () => {
 
             if (isCancelled) {
-                return;
+                return load;
             }
 
             await preloadImage(src);
 
             if (isCancelled) {
-                return;
+                return load;
             }
             
             setLoad(true);
