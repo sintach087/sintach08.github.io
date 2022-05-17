@@ -22,13 +22,13 @@ const ImagePreloader = (props: any) => {
         const loadImage = async () => {
 
             if (isCancelled) {
-                return;
+                return load;
             }
 
             await preloadImage(props.src);
 
             if (isCancelled) {
-                return;
+                return load;
             }
             
             setLoad(true);
