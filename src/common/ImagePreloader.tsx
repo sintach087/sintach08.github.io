@@ -19,7 +19,7 @@ const ImagePreloader = (props: any) => {
     useEffect(() => {
         let isCancelled = false;
 
-        async function loadImage() {
+        const loadImage = async () => {
 
             if (isCancelled) {
                 return;
