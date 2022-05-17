@@ -24,7 +24,8 @@ import {
     SiGnubash,
     SiCplusplus,
     SiFramer,
-    SiTailwindcss
+    SiTailwindcss,
+    SiSass
 } from 'react-icons/si';
 
 export const Skillsets = [
@@ -38,6 +39,12 @@ export const Skillsets = [
         link: SiCss3,
         alt: 'css3',
         name: 'CSS3',
+        tab: 1,
+    },
+    {
+        link: SiSass,
+        alt: 'sass',
+        name: 'SCSS',
         tab: 1,
     },
     {
