@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.66fff19f.css",
+    "main.css": "/static/css/main.b7a4255e.css",
     "main.js": "/static/js/main.3665677e.js",
     "static/media/dataviewer.webp": "/static/media/dataviewer.a2fbb59b426c90f55843.webp",
     "static/media/engineeringpurgingtool.webp": "/static/media/engineeringpurgingtool.96a7d3348cbceaa12580.webp",
@@ -31,7 +31,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.66fff19f.css",
+    "static/css/main.b7a4255e.css",
     "static/js/main.3665677e.js"
   ]
 }
