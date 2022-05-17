@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 const preloadImage = (src: string) => {
     return new Promise((resolve, reject) => {
         const img = new Image();
-        img.onload = function() {
+        img.onload = () => {
             resolve(img);
         }
-        img.onerror = img.onabort = function() {
+        img.onerror = img.onabort = () => {
             reject(src);
         }
         img.src = src;
@@ -22,13 +22,13 @@ const ImagePreloader = (props: any) => {
         const loadImage = async () => {
 
             if (isCancelled) {
-                return load;
+                return;
             }
 
             await preloadImage(props.src);
 
             if (isCancelled) {
-                return load;
+                return;
             }
             
             setLoad(true);
@@ -40,8 +40,8 @@ const ImagePreloader = (props: any) => {
             isCancelled = true;
         }
         
-    }, [props])
-
+    }, [props]); // eslint-disable-line react-hooks/exhaustive-deps
+    
     return (
         <img src={props.src} {...props} style={{ opacity: load ? 1 : 0}} alt={props.alt ? props.alt : 'preloadImage'} />
     );

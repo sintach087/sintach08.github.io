@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 const preloadImage = (src: string) => {
     return new Promise((resolve, reject) => {
         const img = new Image();
-        img.onload = function() {
+        img.onload = () => {
             resolve(img);
         }
-        img.onerror = img.onabort = function() {
+        img.onerror = img.onabort = () => {
             reject(src);
         }
         img.src = src;
@@ -40,7 +40,7 @@ export const useImagePreloader = (src: any) => {
             isCancelled = true;
         }
         
-    }, [src])
-
+    }, [src]); // eslint-disable-line react-hooks/exhaustive-deps
+    
     return load;
 }
