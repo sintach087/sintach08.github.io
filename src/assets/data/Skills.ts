@@ -28,6 +28,8 @@ import {
     SiSass
 } from 'react-icons/si';
 
+import { CgTranscript } from 'react-icons/cg';
+
 export const Skillsets = [
     {
         link: SiHtml5,
@@ -84,15 +86,15 @@ export const Skillsets = [
         tab: 1,
     },
     {
-        link: SiMaterialui,
-        alt: 'miui',
-        name: 'MIUI',
-        tab: 1,
-    },
-    {
         link: SiBootstrap,
         alt: 'bootstrap',
         name: 'Bootstrap',
+        tab: 1,
+    },
+    {
+        link: SiMaterialui,
+        alt: 'miui',
+        name: 'MIUI',
         tab: 1,
     },
     {
@@ -172,6 +174,18 @@ export const Skillsets = [
         link: SiGnubash,
         alt: 'bash',
         name: 'Bash',
+        tab: 3,
+    },
+    {
+        link: SiGnubash,
+        alt: 'sh',
+        name: 'SH',
+        tab: 3,
+    },
+    {
+        link: CgTranscript,
+        alt: 'batch',
+        name: 'Batch',
         tab: 3,
     },
     {
