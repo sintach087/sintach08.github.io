@@ -39,13 +39,13 @@ export const WebDev = [
     {
         projectname: 'Engineering Purging Tool',
         details: 'A tool used for real time monitoring and deleting unnecessary Windows files of Engineering ATEs to free up storage space.',
-        tools: 'HTML, SCSS, React.js, C# ASP.NET Core, PHP, Shell (SH) Scripts, MySQL, ChartJS',
+        tools: 'HTML, SCSS, React.js, C# .NET Core 5, PHP, Shell (SH) Scripts, MySQL, ChartJS',
         img: engineeringpurgingtool
     },
     {
         projectname: 'LTC Supplemental File Upload',
         details: 'Automates the uploading of COR, DAT and XLS supplemental program files to manufacturing program server which eliminates file upload email request from the engineers to the system administrators.',
-        tools: 'HTML, SCSS, Angular, C# ASP.NET Core, PHP, MySQL',
+        tools: 'HTML, SCSS, Angular, .NET Core, PHP, MySQL',
         img: supplementalfileupload
     },
     {

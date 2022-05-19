@@ -14,7 +14,7 @@ const Tools = () => {
                         return  (
                             <Reveal effect='animate__animated  animate__flipInX' key={y}>
                                 <div className='card tools-card float-shadow'>
-                                    <x.img className={`card-img-top ${y % 2 ? 'green' : 'orange'}`} />
+                                    <x.img className={`card-img-top ${y % 2 ? 'green' : 'orange'}`} />                                   
                                     <div className="card-body">
                                         <p className="card-text text-center">{x.name}</p>
                                     </div>

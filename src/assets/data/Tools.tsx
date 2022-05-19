@@ -7,6 +7,8 @@ import {
     SiNotepadplusplus
 } from 'react-icons/si';
 
+import Heidi from 'assets/images/tools/heidi';
+
 export const Tools_data = [
     {
         img: SiVisualstudiocode,
@@ -31,5 +33,9 @@ export const Tools_data = [
     {
         img: SiNotepadplusplus,
         name: 'NOTEPAD++'
+    },
+    {
+        img: Heidi,
+        name: 'HEIDISQL'
     }
 ]
