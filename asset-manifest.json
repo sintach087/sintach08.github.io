@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b7a4255e.css",
-    "main.js": "/static/js/main.55aae9b4.js",
+    "main.js": "/static/js/main.143b70bc.js",
     "static/media/dataviewer.webp": "/static/media/dataviewer.a2fbb59b426c90f55843.webp",
     "static/media/engineeringpurgingtool.webp": "/static/media/engineeringpurgingtool.96a7d3348cbceaa12580.webp",
     "static/media/licenseddeniedreport.webp": "/static/media/licenseddeniedreport.8386794d65fda4403b00.webp",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.b7a4255e.css",
-    "static/js/main.55aae9b4.js"
+    "static/js/main.143b70bc.js"
   ]
 }
