@@ -1,6 +1,8 @@
 import sweetalert2green from 'assets/images/skills/sweetalert2green.webp';
 import sweetalert2orange from 'assets/images/skills/sweetalert2orange.webp';
 
+import { GiMicrochip } from 'react-icons/gi';
+import { FaServer } from 'react-icons/fa';
 import {
     SiHtml5,
     SiCss3,
@@ -25,7 +27,11 @@ import {
     SiCplusplus,
     SiFramer,
     SiTailwindcss,
-    SiSass
+    SiSass,
+    SiArduino,
+    SiWindows,
+    SiLinux
+
 } from 'react-icons/si';
 
 import { CgTranscript } from 'react-icons/cg';
@@ -194,4 +200,34 @@ export const Skillsets = [
         name: 'C++',
         tab: 3,
     },
+    {
+        link: SiArduino,
+        alt: 'arduino',
+        name: 'Arduino',
+        tab: 3,
+    },
+    {
+        link: GiMicrochip,
+        alt: 'microcontroller',
+        name: 'Microcontroller',
+        tab: 3,
+    },
+    {
+        link: FaServer,
+        alt: 'server',
+        name: 'Servers',
+        tab: 3,
+    },
+    {
+        link: SiWindows,
+        alt: 'windows',
+        name: 'Windows',
+        tab: 3,
+    },
+    {
+        link: SiLinux,
+        alt: 'linux',
+        name: 'Linux',
+        tab: 3,
+    }
 ]

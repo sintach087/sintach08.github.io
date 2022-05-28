@@ -4,7 +4,8 @@ import {
     SiGit,
     SiMicrosoftoffice,
     SiPostman,
-    SiNotepadplusplus
+    SiNotepadplusplus,
+    SiSwagger
 } from 'react-icons/si';
 
 import Heidi from 'assets/images/tools/heidi';
@@ -37,5 +38,9 @@ export const Tools_data = [
     {
         img: Heidi,
         name: 'HEIDISQL'
+    },
+    {
+        img: SiSwagger,
+        name: 'SiSwagger'
     }
 ]
